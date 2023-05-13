@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root {
+    --primary: #3D946A;
+    --black: #000;
+    --white: #fff;
+    --secondary: #EA4958;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+.btn-theme {
+    background-color: var(--secondary);
+    padding: 0.5rem 2rem;
+    color: var(--white) !important;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn-theme:hover {
+    box-shadow: 0 0 0 2px var(--primary), 0 0 0 4px var(--secondary);
+}
+
+.btn-theme-2 {
+    background-color: var(--secondary);
+    padding: 0.5rem 2rem;
+    color: var(--white) !important;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn-theme-2:hover {
+    box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--secondary);
+}
+
+.navbar {
+    width: 100%;
+    padding: 2rem 0 !important;
+    position: absolute;
+    top: 0;
+}
+
+.navbar .nav-link {
+    font-size: 1rem;
+    color: var(--white) !important;
+    padding: 1rem !important;
+}
+
+.mainSection {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+}
+
+.mainSection h1 {
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.mainSection .grid-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.mainSection .grid-main .griditem {
+    background-color: var(--white);
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    animation: banner 2s infinite alternate;
+}
+
+.mainSection .grid-main .griditem:nth-child(2),
+.mainSection .grid-main .griditem:nth-child(4) {
+    transform: translateY(2rem);
+    animation: banner2 2s infinite alternate;
+}
+
+.mainSection .grid-main .griditem p {
+    margin: 0;
+}
+
+.mainSection .grid-main .griditem img {
+    width: 90%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+@keyframes banner {
+    100% {
+        transform: translateY(2rem);
+    }
+}
+
+@keyframes banner2 {
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.offerSection .card {
+    text-align: center;
+    border-radius: 200px;
+    padding: 2rem;
+    border-color: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.offerSection .card a {
+    opacity: 0;
+    color: var(--secondary);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.offerSection .card a i {
+    transition: 0.5s;
+}
+
+.offerSection .card a:hover i {
+    margin-left: 5px;
+}
+
+.offerSection .card:hover a {
+    opacity: 1;
+}
+
+.offerSection .card:hover {
+    border-color: #efefef;
+}
+
+.productSection .card {
+    border-radius: 10px;
+    border: 5px solid var(--white);
+    text-decoration: none;
+    color: var(--black);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.productSection .card:hover img {
+    transform: scale(1.01);
+}
+
+.productSection .card:hover {
+    transform: translateY(-10px)
+}
+
+.insta .fs-1 {
+    line-height: 1;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.mainabout {
+    background-image: url(../IMAGES/cookies4.jfif);
+    background-attachment: fixed;
+    height: 70vh;
+    width: 100%;
+}
+
+.margin-top-negative {
+    margin-top: -8rem;
+}
+
+.margin-top-negative-3 {
+    box-shadow: 7px 0px 6px 0px gray;
+    transform: translate(5px);
+}
+
+.image-section {
+    height: 400px;
+}
+
+.imagee {
+    background-image: url(../IMAGES/cake1.jfif);
+    height: 100px;
+}
+
+footer {
+    background-color: var(--secondary);
+}
+
+footer p {
+    margin: 0;
+    padding: 10px 0;
+    color: var(--white);
+}
